@@ -1,69 +1,51 @@
-/* Reset some default styles */
-body, h1, p, button {
+/* styles.css */
+
+body {
     margin: 0;
     padding: 0;
-}
-
-/* Basic styling */
-body {
     font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f4f4f4;
-    color: #333;
+    color: #fff; /* White text color for contrast */
+    background: url('images/background.jpg') no-repeat center center fixed;
+    background-size: cover; /* Cover the entire background */
 }
 
 header {
-    background-color: #333;
-    color: #fff;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
     padding: 20px;
     text-align: center;
 }
 
-header h1 {
-    margin-bottom: 10px;
-}
-
-header p {
-    font-size: 1.2em;
+h1, p {
+    margin: 0;
 }
 
 main {
     padding: 20px;
-    max-width: 800px;
-    margin: 0 auto;
+    background: rgba(0, 0, 0, 0.7); /* Slightly more transparent for content sections */
+    border-radius: 10px;
 }
 
-.intro {
+.intro, .cta, .counter {
     margin-bottom: 20px;
 }
 
-.intro h2 {
-    color: #333;
-}
-
-.cta {
-    text-align: center;
-}
-
 button {
-    background-color: #007BFF;
-    color: #fff;
+    background-color: #007BFF; /* Blue button color */
+    color: #fff; /* White text color on button */
     border: none;
     padding: 10px 20px;
-    font-size: 1em;
-    cursor: pointer;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: #0056b3; /* Darker blue on hover */
 }
 
 footer {
-    background-color: #333;
-    color: #fff;
     text-align: center;
     padding: 10px;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
     position: fixed;
     width: 100%;
     bottom: 0;
